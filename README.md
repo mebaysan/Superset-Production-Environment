@@ -4,7 +4,7 @@
 
 # Introduction
 
-Actually, this is a simple repo that holds some scripts. So, why I created this? I suffered while trying to run Superset on my local. I succeed with `docker-compose-non-dev.yml` but I couldn't install the drivers I want. I couldn't run development mode on my local. I alwasy took errors. Then almost I started to cry, I had been dealing with this for almost 4-5 days until I created these scripts. You can access Superset's official Docker image bu using [here](https://hub.docker.com/r/apache/superset). I faced with errors when I try to change its config variables like `SQLALCHEMY_DATABASE_URI`, etc. Yes, I could use with `non-dev` mode but there is another problem occurred that how can I store my metadata to where I want? In this template, I can easily override local variables on Superset. Hopefully, this will help you.
+Actually, this is a simple repo that holds some scripts. So, why I created this? I suffered while trying to run Superset on my local. I succeed with `docker-compose-non-dev.yml` but I couldn't install the drivers I want. I couldn't run development mode on my local. I alwasy took errors. Then almost I started to cry, I had been dealing with this for almost 4-5 days until I created these scripts. You can access Superset's official Docker image by using [here](https://hub.docker.com/r/apache/superset). I faced with errors when I try to change its config variables like `SQLALCHEMY_DATABASE_URI`, etc. Yes, I could use with `non-dev` mode but there is another problem occurred that how can I store my metadata to where I want? In this template, I can easily override local variables on Superset. Hopefully, this will help you.
 
 # Need Attention Here
 
