@@ -1,0 +1,33 @@
+version: "3.9"
+
+services:
+
+  superset:
+    build: .
+    ports:
+      - "8088:8088"
+    depends_on:
+      - db
+    container_name: superset
+
+  db:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      #- DATABASE_HOST=127.0.0.1
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=SupersetDB
+    restart: unless-stopped
+    volumes:
+      - data_volume:/var/lib/postgresql/data
+    container_name: superset_db
+
+volumes:
+  data_volume:
+    driver: local
+    driver_opts:
+      type: 'none'
+      o: 'bind'
+      device: '/tmp/superset_db_volume/'
