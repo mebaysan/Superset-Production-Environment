@@ -57,3 +57,5 @@ Then we have to re initialize Superset.
 ```bash
 docker exec superset superset init
 ```
+
+We can visit Superset's [official documentation](https://superset.apache.org/docs/security/) for more detail.
