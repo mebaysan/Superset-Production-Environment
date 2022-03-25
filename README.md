@@ -44,3 +44,16 @@ sudo docker exec -it superset superset load_examples
 sudo docker exec -it superset superset init
 ```
 
+# Setting for Public Access
+
+If we want to configure Superset to public access, we need set a default role for not authenticated users in `superset_config.py`.
+
+```python
+PUBLIC_ROLE_LIKE = 'Gamma' # We can set our custom role
+```
+
+Then we have to re initialize Superset.
+
+```bash
+docker exec superset superset init
+```
