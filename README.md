@@ -17,7 +17,7 @@ Actually, this is a simple repo that holds some scripts. So, why I created this?
 # Essential Scripts to Run Superset
 
 ```bash
-sudo docker run -d -p 8080:8088 --name superset local/superset
+sudo docker run -d -p 8080:8088 --name superset apache/superset
 ```
 
  
