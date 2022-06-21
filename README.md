@@ -14,6 +14,9 @@ Actually, this is a simple repo that holds some scripts. So, why I created this?
   - You had to executed the `first-build-superset.sh` before execute this
 - We can override Superset config variables in `superset_config` file which is located in this repo. Then, `Dockerfile` copy this file into `/app/` . If we set SUPERSET_CONFIG_PATH variable (we did in `Dockerfile`), CONFIG_PATH_ENV_VAR will be created while runtime and we will be able to override the configure variables [https://github.com/apache/superset/blob/master/superset/config.py#L1351]
 
+If you want to read about my Superset story, you can visit the link below.
+[Powerful BI Tool: Apache Superset](https://medium.com/codex/powerful-bi-tool-apache-superset-ba8e17a8549b)
+
 # Essential Scripts to Run Superset
 
 ```bash
